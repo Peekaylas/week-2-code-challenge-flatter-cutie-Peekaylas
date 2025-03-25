@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/characters')
+fetch('https://json-server-vercel-uyji.vercel.app/characters')
     .then(function(response) {
         return response.json();
     })
