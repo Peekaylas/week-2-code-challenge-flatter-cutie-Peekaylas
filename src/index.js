@@ -18,7 +18,7 @@ fetch('http://localhost:3000/characters')
     });
 
 function displayCharacterDetails(id) {
-    fetch('http://localhost:3000/characters/' + id)
+    fetch('https://json-server-vercel-uyji.vercel.app/characters' + id)
         .then(function(response) {
             return response.json();
         })
@@ -47,7 +47,7 @@ voteForm.onsubmit = function(event) {
         return;
     }
 
-    fetch('http://localhost:3000/characters/' + currentId, {
+    fetch('https://json-server-vercel-uyji.vercel.app/characters' + currentId, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
@@ -75,7 +75,7 @@ resetButton.onclick = function() {
         return;
     }
 
-    fetch('http://localhost:3000/characters/' + currentId, {
+    fetch('https://json-server-vercel-uyji.vercel.app/characters' + currentId, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
@@ -96,7 +96,7 @@ characterForm.onsubmit = function(event) {
     var name = document.getElementById('name').value;
     var image = document.getElementById('image-url').value;
 
-    fetch('http://localhost:3000/characters', {
+    fetch('https://json-server-vercel-uyji.vercel.app/characters', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
