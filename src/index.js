@@ -1,4 +1,4 @@
-fetch('https://json-server-vercel-uyji.vercel.app/characters')
+fetch('https://json-server-vercel-amber-mu.vercel.app/characters')
     .then(function(response) {
         return response.json();
     })
@@ -18,7 +18,7 @@ fetch('https://json-server-vercel-uyji.vercel.app/characters')
     });
 
 function displayCharacterDetails(id) {
-    fetch('https://json-server-vercel-uyji.vercel.app/characters' + id)
+    fetch('https://json-server-vercel-amber-mu.vercel.app/characters' + id)
         .then(function(response) {
             return response.json();
         })
