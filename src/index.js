@@ -1,4 +1,4 @@
-fetch('https://json-server-vercel-git-main-peekays-projects-ed585fd6.vercel.app/characters')
+fetch('https://json-server-vercel-amber-mu.vercel.app/charactersp')
     .then(function(response) {
         return response.json();
     })
@@ -18,7 +18,7 @@ fetch('https://json-server-vercel-git-main-peekays-projects-ed585fd6.vercel.app/
     });
 
 function displayCharacterDetails(id) {
-    fetch('https://json-server-vercel-git-main-peekays-projects-ed585fd6.vercel.app/characters' + id)
+    fetch('https://json-server-vercel-amber-mu.vercel.app/charactersp' + id)
         .then(function(response) {
             return response.json();
         })
@@ -47,7 +47,7 @@ voteForm.onsubmit = function(event) {
         return;
     }
 
-    fetch('https://json-server-vercel-git-main-peekays-projects-ed585fd6.vercel.app/characters' + currentId, {
+    fetch('https://json-server-vercel-amber-mu.vercel.app/charactersp' + currentId, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
@@ -75,7 +75,7 @@ resetButton.onclick = function() {
         return;
     }
 
-    fetch('https://json-server-vercel-git-main-peekays-projects-ed585fd6.vercel.app/characters' + currentId, {
+    fetch('https://json-server-vercel-amber-mu.vercel.app/charactersp' + currentId, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
@@ -96,7 +96,7 @@ characterForm.onsubmit = function(event) {
     var name = document.getElementById('name').value;
     var image = document.getElementById('image-url').value;
 
-    fetch('https://json-server-vercel-git-main-peekays-projects-ed585fd6.vercel.app/characters', {
+    fetch('https://json-server-vercel-amber-mu.vercel.app/charactersp', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
