@@ -47,7 +47,7 @@ voteForm.onsubmit = function(event) {
         return;
     }
 
-    fetch('https://json-server-vercel-uyji.vercel.app/characters' + currentId, {
+    fetch('https://json-server-vercel-amber-mu.vercel.app/characters' + currentId, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
@@ -75,7 +75,7 @@ resetButton.onclick = function() {
         return;
     }
 
-    fetch('https://json-server-vercel-uyji.vercel.app/characters' + currentId, {
+    fetch('https://json-server-vercel-amber-mu.vercel.app/characters' + currentId, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
@@ -96,7 +96,7 @@ characterForm.onsubmit = function(event) {
     var name = document.getElementById('name').value;
     var image = document.getElementById('image-url').value;
 
-    fetch('https://json-server-vercel-uyji.vercel.app/characters', {
+    fetch('https://json-server-vercel-amber-mu.vercel.app/characters', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
