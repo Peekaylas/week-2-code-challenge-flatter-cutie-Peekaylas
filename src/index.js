@@ -1,4 +1,4 @@
-fetch('https://json-server-vercel-rxee.vercel.app/characters')
+fetch('https://json-server-vercel-sepia-five.vercel.app/characters')
     .then(function(response) {
         return response.json();
     })
@@ -18,7 +18,7 @@ fetch('https://json-server-vercel-rxee.vercel.app/characters')
     });
 
 function displayCharacterDetails(id) {
-    fetch('https://json-server-vercel-rxee.vercel.app/characters' + id)
+    fetch('https://json-server-vercel-sepia-five.vercel.app/characters' + id)
         .then(function(response) {
             return response.json();
         })
@@ -47,7 +47,7 @@ voteForm.onsubmit = function(event) {
         return;
     }
 
-    fetch('https://json-server-vercel-rxee.vercel.app/characters' + currentId, {
+    fetch('https://json-server-vercel-sepia-five.vercel.app/characters' + currentId, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
@@ -75,7 +75,7 @@ resetButton.onclick = function() {
         return;
     }
 
-    fetch('https://json-server-vercel-rxee.vercel.app/characters' + currentId, {
+    fetch('https://json-server-vercel-sepia-five.vercel.app/characters' + currentId, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
@@ -96,7 +96,7 @@ characterForm.onsubmit = function(event) {
     var name = document.getElementById('name').value;
     var image = document.getElementById('image-url').value;
 
-    fetch('https://json-server-vercel-rxee.vercel.app/characters', {
+    fetch('https://json-server-vercel-sepia-five.vercel.app/characters', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
